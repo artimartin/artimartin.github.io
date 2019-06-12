@@ -1,5 +1,16 @@
 .section-one{
-	background-color: red;
+	background-color: #a268e2;
 	color:white;
 	font-size: 14px;
+	padding: 10px;
+
 }
+h1{
+	text-align: center;
+}
+	.page-title{
+		text-align: center;
+	}
+	div.right-div{
+		width: 50%;
+	}

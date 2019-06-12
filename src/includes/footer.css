@@ -1,5 +1,5 @@
 .footer{
-	background-color: black;
+	background-color: #a268e2;
 	padding-top: 30px;
 	padding-bottom: 50px;
 	padding-right: 10px;
@@ -7,6 +7,6 @@
 }
 
 .footer h5{
-	color: orange;
+	color: #e2daea;
 	font-size: 24px;
 }
