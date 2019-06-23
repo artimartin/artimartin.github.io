@@ -9,7 +9,7 @@ class SectionOne extends Component {
 				<h3 className="page-title">Сова</h3>
 				<div className="premier">
 					<div>
-						<h4 class="add">Сокращения:</h4>
+						<h4 className="add">Сокращения:</h4>
 							<ul>
 								<li>СБН — столбик без накида. </li>
 								<li>СС — соединительный столбик.</li>
