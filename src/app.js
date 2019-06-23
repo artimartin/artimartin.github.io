@@ -1,9 +1,9 @@
 import "./app.css";
-// import edinorogka from "../images/edinorogka.jpeg";
 import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
 import Header from './includes/header';
 import SectionOne from './includes/section_one';
+import Begemotik from './includes/begemotik';
 import Footer from './includes/footer';
 
 class App extends React.Component{
@@ -14,6 +14,7 @@ class App extends React.Component{
 
 				<div className="app">
 					<SectionOne />
+					<Begemotik />
 					{/*<img src={require('./images/edinorogka.jpeg')} alt="Красавчик" />*/}
 					<Footer />
 				</div>
