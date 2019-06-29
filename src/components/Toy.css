@@ -1,0 +1,18 @@
+.toy-element{
+	padding: 10px;
+}
+.toy-element img{
+	width: 200px;
+	padding: 5px;
+}
+
+.toy-element li{
+    padding: 1px 1px 12px;
+    list-style: none;
+    font-size: 14px;
+}
+
+.toy-build-shema {
+	display: block;
+	padding: 10px 5px;
+}

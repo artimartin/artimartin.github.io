@@ -1,0 +1,30 @@
+.toys-list{
+	background-color: #a268e2;
+	color:white;
+	font-size: 14px;
+	padding: 10px;
+
+}
+h1{
+	text-align: center;
+}
+	.page-title{
+		text-align: center;
+	}
+	div.right-div{
+		width: 50%;
+	}
+
+	.toys-list img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+    padding: 10px;
+}
+
+li.toy-item{
+    list-style: none;
+    display: inline-flex;
+    width: 250px;
+}

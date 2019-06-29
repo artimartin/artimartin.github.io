@@ -2,6 +2,8 @@ import "./app.css";
 import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
 import Header from './includes/header';
+import {toys} from './db/toys';
+import ToysList from './components/ToysList';
 import SectionOne from './includes/section_one';
 import Begemotik from './includes/begemotik';
 import Footer from './includes/footer';
@@ -9,15 +11,15 @@ import Footer from './includes/footer';
 class App extends React.Component{
 	render(){
 		return(
-			<div className="container martin">
+			<div className="martin">
 				<Header />
-
-				<div className="app">
-					<SectionOne />
-					<Begemotik />
+				<div className="container app">
+				<ToysList toys={toys} />
+					{/* <SectionOne /> */}
+					{/* <Begemotik /> */}
 					{/*<img src={require('./images/edinorogka.jpeg')} alt="Красавчик" />*/}
-					<Footer />
 				</div>
+				<Footer />
 			</div>
 			)
 	}

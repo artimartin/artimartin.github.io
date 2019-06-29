@@ -1,6 +1,13 @@
 body,html {
-	background-color: #a268e2;
+	color: white;
 }
 .martin {
 	/*background-color: green;*/
+	min-height: 100%;
+}
+.app {
+    background-color: #a268e2;
+    min-height: 800px;
+    width: 100%;
+    padding-top: 100px;
 }
