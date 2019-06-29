@@ -14,6 +14,7 @@ render(){
 		<div className="row toy-element">
 			<h4 className="toy-title" 
 				onClick={toggleTrigger}>{toy.title}</h4>
+			<span className="toy-author">Автор: {toy.author}</span>
 			<img src={toy.image} onClick={toggleTrigger}
 					alt={toy.title} 
 					className="toy-image" 
