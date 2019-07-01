@@ -4,8 +4,6 @@ import ReactDOM from 'react-dom';
 import Header from './includes/header';
 import {toys} from './db/toys';
 import ToysList from './components/ToysList';
-import SectionOne from './includes/section_one';
-import Begemotik from './includes/begemotik';
 import Footer from './includes/footer';
 
 class App extends React.Component{
@@ -15,9 +13,6 @@ class App extends React.Component{
 				<Header />
 				<div className="container app">
 				<ToysList toys={toys} />
-					{/* <SectionOne /> */}
-					{/* <Begemotik /> */}
-					{/*<img src={require('./images/edinorogka.jpeg')} alt="Красавчик" />*/}
 				</div>
 				<Footer />
 			</div>
