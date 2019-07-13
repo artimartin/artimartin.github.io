@@ -13,10 +13,12 @@
 }
 
 .toy-build-shema {
-	display: block;
-	padding: 10px 5px;
+    display: block;
+    color: black;
+    background-color: white;
+    padding: 10px 5px;
 }
 .toy-author {
-    color: #e1f5ff;
+    /*color: #e1f5ff;*/
     font-size: 12px;
 }
