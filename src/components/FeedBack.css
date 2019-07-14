@@ -1,0 +1,37 @@
+.feedback-form{
+	padding: 15px;
+	color: #202020;
+}
+.feedback-form-name{
+	padding: 7px; width: 200px;
+}
+.feedback-form-email{
+	padding: 7px; width: 200px;
+}
+.feedback-form-text{
+	padding: 7px; width: 200px;
+}
+.feedback-form-submit{
+	padding: 7px;
+    width: 200px;
+    background-color: #d0b5ef;
+    border-color: #d3bbef;
+    color: #3c2852;
+}
+
+.feedback-form-submit:hover{
+	background-color: #3c2852;
+    border-color: #7f649c;
+    color: white;
+}
+
+#success {
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    transition: height .25s;
+}
+#success.expand {
+     height: 36px; 
+}
