@@ -12,13 +12,14 @@ render(){
 
 	return(
 		<div className="row toy-element">
-			<h4 className="toy-title" 
-				onClick={toggleTrigger}>{toy.title}</h4>
-			<span className="toy-author">Автор: {toy.author}</span>
-			<img src={toy.image} onClick={toggleTrigger}
+			<div onClick={toggleTrigger} className="toy-header">
+				<h4 className="toy-title">{toy.title}</h4>
+				<span className="toy-author">Автор: {toy.author}</span>
+				<img src={toy.image} 
 					alt={toy.title} 
 					className="toy-image" 
 				/>
+			</div>
 			{this.getShema()}
 		</div>
 		)
