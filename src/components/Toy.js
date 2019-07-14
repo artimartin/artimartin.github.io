@@ -9,12 +9,11 @@ class Toy extends Component {
 }
 render(){
 	const {toy,isActive,toggleTrigger} = this.props
-
 	return(
-		<div className="row toy-element">
+		<div className="row toy">
 			<div onClick={toggleTrigger} className="toy-header">
 				<h4 className="toy-title">{toy.title}</h4>
-				<span className="toy-author">Автор: {toy.author}</span>
+				<div className="toy-author">Автор: {toy.author}</div>
 				<img src={toy.image} 
 					alt={toy.title} 
 					className="toy-image" 

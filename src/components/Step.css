@@ -1,3 +1,8 @@
+.step-title {
+    color: #900303;
+    padding: 10px;
+    font-size: 18px;
+}
 .toy-step-item{
 	padding: 10px;
 }

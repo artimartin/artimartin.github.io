@@ -1,15 +1,20 @@
-.toy-element{
+.toy{
 	padding: 10px;
+	display: flex;
+	flex-flow: row wrap;
 }
-.toy-element img{
-	width: 200px;
-	padding: 5px;
+.toy-title {
+	width: 100%;
 }
-
-.toy-element li{
-    padding: 1px 1px 12px;
-    list-style: none;
-    font-size: 14px;
+.toy-author {
+    /*color: #e1f5ff;*/
+    font-size: 11px;
+}
+.toy img {
+    max-width: 200px;
+    max-height: 200px;
+    padding: 5px;
+    flex: 1 1;
 }
 
 .toy-build-shema {
@@ -17,8 +22,4 @@
     color: black;
     background-color: white;
     padding: 10px 5px;
-}
-.toy-author {
-    /*color: #e1f5ff;*/
-    font-size: 12px;
 }

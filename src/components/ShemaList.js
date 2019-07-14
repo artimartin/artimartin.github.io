@@ -4,9 +4,9 @@ import Step from './Step';
 
 class ShemaList extends Component{
 	render(){
-		const {shema} =this.props;
+		const {shema} = this.props;
 		const shemaElements = shema.map(punkt =>
-			<li key={punkt.id}>
+			<li key={punkt.id} className="shemalist">
 				<span className="step-title">{punkt.title}</span>
 				<Step text={punkt.text} />
 			</li>

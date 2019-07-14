@@ -2,7 +2,6 @@ import './ToysList.css';
 import React,{Component} from 'react';
 import Toy from './Toy';
 import ToysListTrigger from '../triggers/toysListTrigger';
-import FeedBack from './FeedBack';
 
 class ToysList extends Component {
 	render() {
@@ -21,7 +20,6 @@ class ToysList extends Component {
 			<ul className="toy-list">
 				{toyElements}
 			</ul>
-			<FeedBack />
 		</div>
 			)
 	}
