@@ -1,19 +1,16 @@
 import './Toy.css';
 import React,{Component} from 'react';
-import ShemaList from './ShemaList';
-import ToyTrigger from '../triggers/toyTrigger';
 
 class Toy extends Component {
 	constructor(props){
 		super(props);
-
-		// this.state = {toyActive: this.props.toyToggle };
+		this.state = {toyActive: null };
 }
 render(){
-	const {toy,isActive,toggleTrigger,toyToggle} = this.props
+	const {toy,isActive,toyToggle} = this.props
 	return(
 		<div className="row toy">
-			<div onClick={toggleTrigger} className="toy-header">
+			<div onClick={toyToggle} className="toy-header">
 				<h4 className="toy-title">{toy.title}</h4>
 				<div className="toy-author">Автор: {toy.author}</div>
 				<img src={toy.image} 
@@ -37,4 +34,4 @@ render(){
 	}
 }
 
-export default ToyTrigger(Toy);
+export default Toy;

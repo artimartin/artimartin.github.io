@@ -4,7 +4,8 @@
     font-size: 18px;
 }
 .toy-step-item{
-	padding: 10px;
+    padding: 0px;
+    list-style: none;
 }
 .toy-steps{
 	font-size: 12px;

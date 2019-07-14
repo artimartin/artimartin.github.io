@@ -3,7 +3,10 @@ export default (OriginalComponent) =>
 class ToyTrigger extends Component {
 	constructor(props){
 		super(props);
-			this.state = {isActive: false}
+			this.state = {
+				isActive: false,
+				toyID:null
+			}
 	}
 	render(){
 		return <
@@ -13,6 +16,6 @@ class ToyTrigger extends Component {
 	}
 	toggleTrigger = (ev) => {
 			ev && ev.preventDefault && ev.preventDefault()
-			this.setState({isActive: !this.state.isActive })
+			this.setState({isActive: !this.state.isActive})
 	}
 }
