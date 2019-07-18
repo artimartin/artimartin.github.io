@@ -1,12 +1,18 @@
 import "./app.css";
 import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
+import {createStore} from 'redux';
+import {Provider} from 'react-redux';
+import reducer from './reducers';
+
 import Header from './includes/header';
 import {toys} from './db/toys';
 import ToysList from './components/ToysList';
 import ShemaList from './components/ShemaList';
 import ShemaContainer from './components/ShemaContainer';
 import Footer from './includes/footer';
+
+const store = createStore(reducer,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 class App extends React.Component{
 	constructor(props){
@@ -43,6 +49,9 @@ class App extends React.Component{
 	}
 }
 
-ReactDOM.render(<App />,
+ReactDOM.render(
+	<Provider store={store}>
+		<App />
+	</Provider>,
 	document.getElementById('app')
 	);
