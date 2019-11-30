@@ -1,5 +1,6 @@
 import toys from '../db/toys';
-const toysList = (state = [12,14], action) => {
+
+const toysList = (state = {toys}, action) => {
 	switch (action.type) {
 		case 'ADD_TOY':
 		return [

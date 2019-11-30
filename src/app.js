@@ -12,7 +12,8 @@ import ShemaList from './components/ShemaList';
 import ShemaContainer from './components/ShemaContainer';
 import Footer from './includes/footer';
 
-const store = createStore(reducer,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+const store = createStore(reducer,
+	window.__REDUX_DEVTOOLS_EXTENSION__&&window.__REDUX_DEVTOOLS_EXTENSION__());
 
 class App extends React.Component{
 	constructor(props){
