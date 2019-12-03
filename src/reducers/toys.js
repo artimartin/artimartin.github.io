@@ -1,6 +1,6 @@
-import toys from '../db/toys';
+import toysDB from './toysDB';
 
-const toysList = (state = {toys}, action) => {
+const toysList = (state = {toysDB}, action) => {
 	switch (action.type) {
 		case 'ADD_TOY':
 		return [

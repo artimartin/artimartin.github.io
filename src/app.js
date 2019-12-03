@@ -3,17 +3,13 @@ import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
-import reducer from './reducers';
-
 import Header from './includes/header';
-import {toys} from './db/toys';
-import ToysList from './components/ToysList';
-import ShemaList from './components/ShemaList';
-import ShemaContainer from './components/ShemaContainer';
 import Footer from './includes/footer';
+import reducer from './reducers';
+import ToysList from './components/ToysList';
 
 const store = createStore(reducer,
-	window.__REDUX_DEVTOOLS_EXTENSION__&&window.__REDUX_DEVTOOLS_EXTENSION__());
+	window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 class App extends React.Component{
 	constructor(props){
@@ -24,7 +20,7 @@ class App extends React.Component{
 		};
 
 		this.toyToggle = id => {
-			const idx = toys.findIndex(el=>el.id == id);
+			const idx = toysDB.findIndex(el=>el.id == id);
 			this.setState({selectedToy:idx });
 		}
 	}
@@ -33,16 +29,16 @@ class App extends React.Component{
 
 		return(
 			<div className="martin">
+			<noscript><div class="noscript">К сожалению, Ваш браузер не поддерживает скрипты.</div></noscript>
 				<Header />
 				<div className="container app">
-					<ToysList 
-						toys={toys} 
-						toyToggle={this.toyToggle}
-						/>
-					<ShemaContainer
-						title={toys[selectedToy].title} 
-						toy={toys[selectedToy].shema} 
-					/>
+					<ToysList />
+
+					 {/*
+				 	// <ToysList
+					// 	toyToggle={this.toyToggle}
+					// 	/>
+					*/ }
 				</div>
 				<Footer />
 			</div>
@@ -51,8 +47,6 @@ class App extends React.Component{
 }
 
 ReactDOM.render(
-	<Provider store={store}>
-		<App />
-	</Provider>,
+	<Provider store={store}><App /></Provider>,
 	document.getElementById('app')
 	);

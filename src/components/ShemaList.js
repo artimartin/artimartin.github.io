@@ -4,14 +4,14 @@ import Step from './Step';
 
 class ShemaList extends Component{
 	render(){
-		const {shema} = this.props;
+		const {shema,idNum} = this.props;
 		const shemaElements = shema.map(punkt =>
 			<li key={punkt.id} className="shemalist">
 				<span className="step-title">{punkt.title}</span>
-				<Step text={punkt.text} />
+				<Step text={punkt.text} punkt={idNum+punkt.id}/>
 			</li>
 			);
-		
+		// console.log({idNum})
 		return(
 			<ul>{shemaElements}</ul>
 			)
